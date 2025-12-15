@@ -249,3 +249,181 @@
 - [Stellar 文档](https://developers.stellar.org/)
 - [Soroban 文档](https://soroban.stellar.org/)
 - [Freighter Wallet](https://www.freighter.app/)
+
+# English Version
+
+# Crowdfunding dApp Demo
+
+![Screenshot of the Example Dapp](screenshot.png)
+
+This is a crowdfunding decentralized application (dApp) frontend demo project based on [Next.js](https://nextjs.org/), demonstrating how to build a user interface that connects to smart contracts on the Stellar blockchain. The project showcases the creation of crowdfunding campaigns, fund raising, and user interactions.
+
+## Project Overview
+
+This demo includes the following core features:
+
+- **Wallet Connection**: Supports Freighter wallet connection
+- **Account Information**: Displays user balance and account details
+- **Crowdfunding Status**: Real-time display of fundraising progress, target amount, and remaining time
+- **Fund Deposits**: Allows users to donate to crowdfunding projects
+- **Transaction History**: Displays user's deposit records
+- **Mint Tokens**: Demo feature allowing users to mint example tokens (EXT)
+
+## Technology Stack
+
+- **Frontend Framework**: Next.js 13+ (React)
+- **Styling**: CSS Modules
+- **Blockchain**: Stellar (Soroban Contracts)
+- **Wallet**: Freighter Wallet
+
+## Getting Started Guide
+
+### Prerequisites
+
+Before starting, ensure your system meets the following requirements:
+
+- **Node.js**: Version 18.0 or higher (LTS version recommended)
+- **Package Manager**: npm (installed with Node.js) or yarn
+- **Browser**: Modern browser (such as Chrome, Firefox, Edge)
+- **Wallet**: Freighter Wallet ≥ v5.0.2
+
+### Installation Steps
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/dvlan26/Crowdfunding-dApp-Demo.git
+   cd Crowdfunding-dApp-Demo
+   ```
+
+2. **Install Dependencies**
+   ```bash
+   npm install
+   # or use yarn
+   # yarn install
+   ```
+
+   This step will download all necessary dependency packages, which usually takes a few minutes.
+
+3. **Run the Development Server**
+   ```bash
+   npm run dev
+   # or use yarn
+   # yarn dev
+   ```
+
+   The server will start at http://localhost:3000. You should see output similar to:
+   ```
+   ready - started server on 0.0.0.0:3000, url: http://localhost:3000
+   ```
+
+4. **Access the Application**
+   
+   Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
+
+### Configure Wallet
+
+5. **Install Freighter Wallet**
+   
+   If not already installed, download and install the browser extension from the [Freighter Wallet official website](https://www.freighter.app/).
+
+6. **Enable Experimental Mode**
+   
+   Open Freighter Wallet, click settings (gear icon), and enable "Experimental Mode".
+
+7. **Connect to Network**
+   
+   In Freighter, select the Futurenet network (or other networks as needed).
+
+### Start Using
+
+8. **Connect Wallet**
+   
+   In the application, click the "Connect Wallet" button and select Freighter wallet to connect.
+
+9. **Mint Test Tokens**
+   
+   Click the "Mint 100 EXT" button to obtain example tokens for testing donation functionality.
+
+10. **Participate in Crowdfunding**
+    
+    View crowdfunding campaign details, enter donation amount, and confirm the transaction.
+
+**Note**: If the page appears blank or shows "Account not found" error, ensure your wallet address is funded on the selected network.
+
+## File Structure
+
+```
+/
+├── pages/                 # Next.js Pages
+│   ├── _app.tsx          # Application Entry
+│   └── index.tsx         # Home Page
+├── components/            # React Components
+│   ├── atoms/            # Basic Components
+│   ├── molecules/        # Composite Components
+│   └── organisms/        # Page-level Components
+├── styles/               # Global Styles
+├── public/               # Static Resources
+└── assets/               # Icons and Resources
+```
+
+## Component Description
+
+### Atoms (Basic Components)
+- **AmountInput**: Amount input field
+- **AuthorInfo**: Author information display
+- **Button**: Generic button
+- **Card**: Card container
+- **Checkbox**: Checkbox
+- **ConnectButton**: Wallet connect button
+- **Loading**: Loading indicator
+- **ProgressBar**: Progress bar
+- **Spacer**: Spacing component
+
+### Molecules (Composite Components)
+- **Deposits**: Deposit records list
+- **FormPledge**: Donation form
+- **TransactionModal**: Transaction confirmation modal
+- **WalletData**: Wallet data display
+
+### Organisms (Page-level Components)
+- **Campaign**: Crowdfunding campaign details
+- **Pledge**: Donation component
+
+## User Workflow
+
+1. **Connect Wallet**
+   - Click the "Connect Wallet" button
+   - Connect using Freighter wallet
+   - Ensure wallet has experimental mode enabled
+
+2. **View Account Information**
+   - Display current balance
+   - View supported asset types
+
+3. **Participate in Crowdfunding**
+   - View campaign target and progress
+   - Enter donation amount
+   - Confirm transaction
+
+4. **Mint Example Tokens**
+   - Use "Mint 100 EXT" button to get test tokens
+   - For testing donation functionality
+
+## Demo Screenshot
+
+![Screenshot of the Example Dapp](screenshot.png)
+
+## Notes
+
+- This is a frontend demo project, does not include backend contract deployment
+- Requires connection to Stellar network and Soroban RPC
+- Freighter wallet is recommended for testing
+- Example token (EXT) is for demonstration purposes only
+
+## Related Links
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Stellar Documentation](https://developers.stellar.org/)
+- [Soroban Documentation](https://soroban.stellar.org/)
+- [Freighter Wallet](https://www.freighter.app/)
+
